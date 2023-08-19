@@ -149,7 +149,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="View Users"
+                                android:text="View Activity"
                                 android:layout_gravity="center_horizontal"
                                 android:textStyle="bold"
                                 android:textSize="18sp"
@@ -187,7 +187,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Insert"
+                                android:text="Insert Activity"
                                 android:layout_gravity="center_horizontal"
                                 android:textStyle="bold"
                                 android:textSize="18sp"

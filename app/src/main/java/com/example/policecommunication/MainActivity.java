@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         viewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent attendance = new Intent(MainActivity.this, ViewListUser.class);
+               Intent attendance = new Intent(MainActivity.this, ViewUserActivity.class);
                startActivity(attendance);
             }
         });
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         insertUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent attendance = new Intent(MainActivity.this, insertUser.class);
+               Intent attendance = new Intent(MainActivity.this, insertUserActivity.class);
                startActivity(attendance);
             }
         });
