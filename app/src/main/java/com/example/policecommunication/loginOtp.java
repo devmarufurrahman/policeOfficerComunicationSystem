@@ -45,11 +45,17 @@ public class loginOtp extends AppCompatActivity {
                         public void onClick(View view) {
                             if (!editOtp.getText().toString().equals("")){
                                 editOtp.getText().toString();
+                                Intent dashboard = new Intent(loginOtp.this, MainActivity.class);
+                                startActivity(dashboard);
+                                finish();
+                                dialog.dismiss();
                             } else {
                                 Toast.makeText(loginOtp.this, "OTP Invalid", Toast.LENGTH_SHORT).show();
                             }
+
                         }
                     });
+
 
                     dialog.show();
 
@@ -73,6 +79,7 @@ public class loginOtp extends AppCompatActivity {
 
                 Intent signup = new Intent(loginOtp.this,registrationPage.class);
                 startActivity(signup);
+                finish();
             }
         });
 

@@ -58,6 +58,7 @@ public class registrationPage extends AppCompatActivity {
 
                     Intent signupSuccessfully = new Intent(registrationPage.this, loginOtp.class);
                     startActivity(signupSuccessfully);
+                    finish();
                     Toast.makeText(registrationPage.this, "User Account Create Successfully", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(registrationPage.this, "Please Input all field", Toast.LENGTH_SHORT).show();
