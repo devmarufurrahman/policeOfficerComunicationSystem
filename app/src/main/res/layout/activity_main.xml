@@ -41,7 +41,6 @@
                     >
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/attendenceBtn"
                         android:layout_width="135dp"
                         android:layout_height="135dp"
                         app:cardCornerRadius="15dp"
@@ -50,6 +49,7 @@
                         >
 
                         <LinearLayout
+                            android:id="@+id/attendenceBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
@@ -86,6 +86,7 @@
                         >
 
                         <LinearLayout
+                            android:id="@+id/messagePage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
@@ -131,6 +132,7 @@
                         >
 
                         <LinearLayout
+                            android:id="@+id/ViewUser"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
@@ -168,6 +170,7 @@
                         >
 
                         <LinearLayout
+                            android:id="@+id/insertUser"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
