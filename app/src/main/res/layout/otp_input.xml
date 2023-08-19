@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:background="@color/dialog_theme"
+    android:orientation="vertical"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="20dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/newContactHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter OTP"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/editOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="OTP here"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="11dp" />
+
+    <Button
+        android:id="@+id/otpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="90dp"
+        />
+
+
+
+
+</LinearLayout>
