@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout attendanceBtn, messagePage, viewUser, insertUser;
+    LinearLayout attendanceBtn, messagePage, viewUser, insertUser, liveLocation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         messagePage = findViewById(R.id.messagePage);
         viewUser = findViewById(R.id.ViewUser);
         insertUser = findViewById(R.id.insertUser);
+        liveLocation = findViewById(R.id.liveLocation);
+
 
 
 
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // message view
-        attendanceBtn.setOnClickListener(new View.OnClickListener() {
+        messagePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                Intent attendance = new Intent(MainActivity.this, MessagePage.class);
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // user list view
-        attendanceBtn.setOnClickListener(new View.OnClickListener() {
+        viewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                Intent attendance = new Intent(MainActivity.this, ViewListUser.class);
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // user insert view
-        attendanceBtn.setOnClickListener(new View.OnClickListener() {
+        insertUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                Intent attendance = new Intent(MainActivity.this, insertUser.class);
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Live location view
-        attendanceBtn.setOnClickListener(new View.OnClickListener() {
+        liveLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                Intent attendance = new Intent(MainActivity.this, LiveLocation.class);
