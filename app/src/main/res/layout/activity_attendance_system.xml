@@ -88,7 +88,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/inTime"
+                    android:id="@+id/inTimeShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No in time"
@@ -118,6 +118,7 @@
                     />
 
                 <TextView
+                    android:id="@+id/outTimeShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No out time"
@@ -140,6 +141,7 @@
         >
 
         <Button
+            android:id="@+id/inTimeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="In Time"
@@ -151,9 +153,10 @@
             />
 
         <Button
+            android:id="@+id/outTimeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="In Time"
+            android:text="Out Time"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_weight="1"
