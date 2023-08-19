@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="40dp"
+    tools:context=".registrationPage">
+
+
+
+    <TextView
+        android:id="@+id/regTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/userFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="First Name"
+                android:padding="15dp"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/userLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Last Name"
+                android:padding="15dp"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/userContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Contact Number"
+                android:padding="15dp"
+                android:inputType="number"
+                />
+
+
+            <EditText
+                android:id="@+id/regAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Address"
+                android:padding="15dp"
+                android:inputType="text"
+                />
+
+
+            <EditText
+                android:id="@+id/regEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Email"
+                android:padding="15dp"
+                android:inputType="textWebEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/userDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Designation"
+                android:padding="15dp"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/userNid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="NID number"
+                android:padding="15dp"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/userPoliceId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Police Id"
+                android:padding="15dp"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/userAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:hint="Age"
+                android:padding="15dp"
+                android:inputType="number"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:src="@drawable/user_image"
+                    android:layout_marginRight="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick a Image"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/signupBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
