@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Police Communication</string>
+    <string name="title_activity_live_location">LiveLocation</string>
 </resources>
