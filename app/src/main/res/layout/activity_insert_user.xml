@@ -1,9 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:gravity="center"
     tools:context=".insertUserActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actvInserTitle"
+        android:background="@drawable/bg_title_shape"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Activity Add"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="-120dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/theme_color_light"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <EditText
+                    android:id="@+id/editActvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:focusable="true"
+                    android:hint="Activity Title"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/editActvDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:focusable="true"
+                    android:hint="Activity Description"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/editActvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:focusable="true"
+                    android:hint="Activity Location"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/editActvLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:focusable="true"
+                    android:hint="Activity Log"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activity Add"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/addActivityBtn"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-130dp"
+        android:src="@drawable/apbn"
+        />
+
+</LinearLayout>

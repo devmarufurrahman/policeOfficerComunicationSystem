@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         viewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent attendance = new Intent(MainActivity.this, ViewUserActivity.class);
-               startActivity(attendance);
+//               Intent attendance = new Intent(MainActivity.this, ViewUserActivity.class);
+//               startActivity(attendance);
             }
         });
 
