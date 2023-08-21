@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,6 +50,15 @@ public class loginOtp extends AppCompatActivity {
                                 startActivity(dashboard);
                                 finish();
                                 dialog.dismiss();
+
+
+                                SharedPreferences preferences = getSharedPreferences("SharedPreference",MODE_PRIVATE);
+                                SharedPreferences.Editor editor = preferences.edit();
+                                if (!editOtp.getText().toString().equals("")) {
+                                    editor.putString("user", editOtp.getText().toString());
+                                    editor.apply();
+
+                                }
                             } else {
                                 Toast.makeText(loginOtp.this, "OTP Invalid", Toast.LENGTH_SHORT).show();
                             }
@@ -84,4 +94,5 @@ public class loginOtp extends AppCompatActivity {
         });
 
     }
+
 }
