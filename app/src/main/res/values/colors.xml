@@ -5,4 +5,6 @@
     <color name="theme_color">#1D2A70</color>
     <color name="theme_color_light">#666E9B</color>
     <color name="dialog_theme">#009688</color>
+    <color name="log_theme">#009628</color>
+
 </resources>

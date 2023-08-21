@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="30dp"
     tools:context=".AttendanceSystem">
 
     <TextView
@@ -22,7 +21,7 @@
         />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_gravity="center"
         app:cardCornerRadius="15dp"
@@ -35,7 +34,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="10dp"
+            android:padding="20dp"
             >
 
             <LinearLayout
@@ -138,6 +137,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2"
+        android:padding="20dp"
         >
 
         <Button
@@ -146,10 +146,10 @@
             android:layout_height="wrap_content"
             android:text="In Time"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/theme_color_light"
             />
 
         <Button
@@ -158,20 +158,14 @@
             android:layout_height="wrap_content"
             android:text="Out Time"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_weight="1"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/theme_color_light"
             />
 
     </LinearLayout>
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/apbn"
-        android:layout_marginTop="40dp"
-        />
 
 
 </LinearLayout>
