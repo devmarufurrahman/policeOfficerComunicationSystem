@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout attendanceBtn, messagePage, viewUser, insertUser, liveLocation;
+
+    ImageView userInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +24,20 @@ public class MainActivity extends AppCompatActivity {
         viewUser = findViewById(R.id.ViewUser);
         insertUser = findViewById(R.id.insertUser);
         liveLocation = findViewById(R.id.liveLocation);
+        userInfo = findViewById(R.id.userImageInfo);
 
 
+
+
+        //user info show
+        userInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent userInfoPage = new Intent(MainActivity.this, UserInfo.class);
+                startActivity(userInfoPage);
+            }
+        });
 
 
         // attendance view
