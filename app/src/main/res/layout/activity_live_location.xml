@@ -22,8 +22,8 @@
         android:layout_height="wrap_content"
         android:text="Get Live location"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
+        android:backgroundTint="@color/theme_color_light"
         />
 </LinearLayout>

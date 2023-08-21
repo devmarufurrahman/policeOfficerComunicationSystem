@@ -1,6 +1,7 @@
 package com.example.policecommunication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 public class insertUserActivity extends AppCompatActivity {
     EditText title, desc, location, log;
     Button actvAddBtn;
+    AppCompatImageView imageBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,18 @@ public class insertUserActivity extends AppCompatActivity {
         location = findViewById(R.id.editActvLocation);
         log = findViewById(R.id.editActvLog);
         actvAddBtn = findViewById(R.id.addActivityBtn);
+        imageBack = findViewById(R.id.imageBackInsert);
+
+
+
+
+        // toolbar
+        imageBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                insertUserActivity.super.onBackPressed();
+            }
+        });
 
 
         actvAddBtn.setOnClickListener(new View.OnClickListener() {

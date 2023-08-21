@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/theme_color_light"
+    android:background="@color/white"
     android:gravity="center"
     android:padding="40dp"
     tools:context=".loginOtp">
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="LOGIN"
-        android:textColor="#800080"
+        android:textColor="@color/theme_color"
         android:textSize="50sp"
 
         android:textStyle="bold" />
@@ -28,7 +28,7 @@
         android:layout_marginTop="32dp"
         app:cardElevation="10dp"
         app:cardCornerRadius="20dp"
-        android:backgroundTint="#D4B4B4"
+        android:backgroundTint="#E2DEDE"
         >
 
 
@@ -56,9 +56,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/theme_color_light"
+                android:textColor="@color/white"
                 />
 
 
@@ -67,10 +67,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SignUp"
-                android:textColor="@color/black"
-                android:textSize="22sp"
-                android:textStyle="bold"
-
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:backgroundTint="@color/theme_color_light"
                 />
         </LinearLayout>
 

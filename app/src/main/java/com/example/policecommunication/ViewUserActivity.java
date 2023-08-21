@@ -3,6 +3,7 @@ package com.example.policecommunication;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -38,6 +39,7 @@ public class ViewUserActivity extends AppCompatActivity {
     ArrayList<contactModal> arrContact = new ArrayList<>();
 
     private  RecyclerContactAdapter adapter;
+    AppCompatImageView imageBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,18 @@ public class ViewUserActivity extends AppCompatActivity {
         recyclerContact = findViewById(R.id.recyclerContact);
         searchView = findViewById(R.id.searchView);
         addContact = findViewById(R.id.addContact);
+        imageBack = findViewById(R.id.imageBackActivity);
+
+
+
+
+        // toolbar
+        imageBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ViewUserActivity.super.onBackPressed();
+            }
+        });
 
 
         // search option

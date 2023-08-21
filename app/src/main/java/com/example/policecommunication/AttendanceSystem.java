@@ -1,6 +1,7 @@
 package com.example.policecommunication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,8 @@ import java.util.Date;
 
 public class AttendanceSystem extends AppCompatActivity {
 
+    AppCompatImageView imageBack;
+
     Button inTimeBtn, outTimeBtn;
     TextView inTime, outTime, todayDate;
     @Override
@@ -23,11 +26,21 @@ public class AttendanceSystem extends AppCompatActivity {
 
         // Id Define
         inTime = findViewById(R.id.inTimeShow);
+        imageBack = findViewById(R.id.imageBackAttend);
         outTime = findViewById(R.id.outTimeShow);
         todayDate = findViewById(R.id.dateShow);
         outTimeBtn = findViewById(R.id.outTimeBtn);
         inTimeBtn = findViewById(R.id.inTimeBtn);
-        
+
+
+        // toolbar
+        imageBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AttendanceSystem.super.onBackPressed();
+            }
+        });
+
         
         // in time 
         inTimeBtn.setOnClickListener(new View.OnClickListener() {
